@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Task = () => {
+const StyledCompoents = () => {
   const Div = styled.div`
     height: 100vh;
     display: flex;
@@ -55,19 +55,19 @@ const Task = () => {
   `;
 
   const Label = styled.label`
-  display: 'flex'
-   alignItems: 'flex-start'  
+      display: flex;
+    align-items: center;  
   `;
 
   return (
     <Div>
       <H1>CONTACT FORM</H1>
       <Card>
-        <Label style={{ display: "flex", alignItems: "flex-start" }}>
+        <Label >
           Email
         </Label>
         <Input type="email" placeholder="Enter Email" />
-        <Label style={{ display: "flex", alignItems: "flex-start" }}>
+        <Label>
           Password
         </Label>
         <Input type="password" placeholder="Enter Password" />
@@ -77,4 +77,4 @@ const Task = () => {
   );
 };
 
-export default Task;
+export default StyledCompoents;
