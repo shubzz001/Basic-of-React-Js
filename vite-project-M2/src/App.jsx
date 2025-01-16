@@ -24,10 +24,16 @@ import Contact from './11Router/Contact'
 import Error from './11Router/Error'
 import Home from './11Router/Home'
 import Navbar from './11Router/Navbar'
+import Axios from './12Axios/Axios'
+import CHome from './13CRUD/CHome'
+import CCreate from './13CRUD/CCreate'
+import CRead from './13CRUD/CRead'
+import CUpdate from './13CRUD/CUpdate'
+import CRUD from './13CRUD/CRUD'
 const App = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       {/* <AProps /> */}
       {/* <AProps /> */}
       {/* <State /> */}
@@ -55,8 +61,8 @@ const App = () => {
 
 
       {/* //!-- Router */}
-      <BrowserRouter>
-        {/* <Header /> */}
+      {/* <BrowserRouter>
+        <Header />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -64,7 +70,22 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<Error />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      {/* //! AXIOS */}
+      {/* <Axios /> */}
+
+
+      {/* //! CRUD */}
+      <CRUD />
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<CHome />} />
+          <Route path='/create' element={<CCreate />} />
+          <Route path='/read' element={<CRead />} />
+          <Route path='/update' element={<CUpdate />} />
+        </Routes>
+      </BrowserRouter> */}
 
     </>
   )

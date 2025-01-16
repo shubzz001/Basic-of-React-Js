@@ -1,0 +1,34 @@
+{
+  "user": [
+    {
+      "name": "Shubham",
+      "email": "shub@gmail.com",
+      "contact": "123456789",
+      "id": "99b8"
+    },
+    {
+      "name": "shubzz",
+      "email": "shubzz@gmail.com",
+      "contact": "987654321hjjb",
+      "id": "59e0"
+    },
+    {
+      "id": "dbe1",
+      "name": "Shubham Zende",
+      "email": "shubhamzende1311@gmail.com",
+      "contact": "67876784656"
+    },
+    {
+      "id": "964f",
+      "name": "janu09",
+      "email": "janu09@gmail.com",
+      "contact": "76543456"
+    },
+    {
+      "id": "fff0",
+      "name": "test",
+      "email": "santoshghare3383@gmail.com",
+      "contact": "e56789"
+    }
+  ]
+}
