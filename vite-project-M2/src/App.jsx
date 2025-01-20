@@ -34,12 +34,13 @@ const App = () => {
   return (
     <>
       <Header />
+
       {/* <AProps /> */}
       {/* <AProps /> */}
       {/* <State /> */}
       {/* <IsLoggedState /> */}
       {/* <SwitchisLogged /> */}
-      {/* <UseEffect /> */}
+      <UseEffect />
       {/* <Ref /> */}
       {/* <ContextApi>
       <Consume/>
@@ -77,7 +78,7 @@ const App = () => {
 
 
       {/* //! CRUD */}
-      <CRUD />
+      {/* <CRUD /> */}
       {/* <BrowserRouter>
         <Routes>
           <Route path='/' element={<CHome />} />

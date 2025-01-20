@@ -26,7 +26,14 @@ const CHome = () => {
         alert("Create new user");
         // Implement your create functionality here
     };
-
+    function handleDelete(id) {
+        let confirmDelete = window.confirm('Are you sure you want to delete?');
+        if (confirmDelete) {
+            axios.delete(`http://localhost:5000/user/${id}`).then(() => {
+                window.location.reload();
+            });
+        }
+    }
     return (
         <div className="p-5 mt-4">
             <Link
@@ -40,7 +47,7 @@ const CHome = () => {
                 <p>{error}</p>
             ) : (
                 <div className="softui-table shadow-lg rounded p-3 bg-light">
-                    <table className="table table-hover table-striped">
+                    <table className="table table-bordered table-hover table-striped" style={{ border: '1px solid black' }}>
                         <thead className="thead-dark">
                             <tr>
                                 <th>#</th>
@@ -61,9 +68,13 @@ const CHome = () => {
                                         <Link to={`/Cupdate/${user.id}`} className="btn btn-warning btn-sm me-2">
                                             Edit
                                         </Link>
-                                        <Link to={`/Cread/${user.id}`} className="btn btn-primary btn-sm">
+                                        <Link to={`/Cread/${user.id}`} className="btn btn-primary   ">
                                             Read
                                         </Link>
+
+                                        <button type="button" className="btn btn-danger btn-sm ms-2" onClick={() => handleDelete(user.id)}>
+                                            Delete
+                                        </button>
                                     </td>
                                 </tr>
                             ))}

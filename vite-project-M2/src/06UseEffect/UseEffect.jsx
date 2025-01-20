@@ -3,10 +3,10 @@
 // import React, { useEffect, useState } from 'react'
 
 // const UseEffect = () => {
-//     const [count, setCount]=useState(0)
-//     useEffect(()=>{
-//         setCount(count+1)
-//     },[])
+//   const [count, setCount] = useState(0)
+//   useEffect(() => {
+//     setCount(count + 1)
+//   }, [])
 //   return (
 //     <div>UseEffect {count}</div>
 //   )
@@ -52,18 +52,16 @@
 
 
 // ! Execute using Dependency
-
-
 // import React, { useEffect, useState } from 'react'
 
 // const UseEffect = () => {
 //     const [count, setCount]=useState(0)
 //     const [Init, setInit]=useState(0)
 //     useEffect(()=>{
-       
+
 //         setCount(count+2)
-        
-//     },[Init])
+
+//     },[Init])  //! Dependency
 //   return (
 //     <>
 //     <h1>UseEffect :{count}</h1>
@@ -76,7 +74,7 @@
 // export default UseEffect
 
 
-//! Using api 
+// //! Using api 
 import React, { useEffect, useState } from 'react';
 
 const UseEffect = () => {
@@ -84,12 +82,12 @@ const UseEffect = () => {
 
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
-      .then((res) => res.json())  
+      .then((res) => res.json())
       .then((data) => {
         console.log(data);
         setData(data);
       });
-  }, []);  
+  }, []);
 
   // return (
   //   <div>
@@ -97,7 +95,7 @@ const UseEffect = () => {
   //     <ul>
   //       {/*//? data? = conditional chanining which means there will be error then it will stops execuation  */}
   //       {data?.map((item, index) => (
-  //         <li key={index}>{item.title}</li>  
+  //         <li key={index}>{item.title}</li>
   //       ))}
   //     </ul>
   //   </div>
@@ -134,14 +132,14 @@ const UseEffect = () => {
               {item.title}
             </h2>
             {/* <p
-              style={{
-                fontSize: "14px",
-                color: "#555",
-                margin: "0 0 10px",
-              }}
-            >
-              {item.description}
-            </p> */}
+                style={{
+                  fontSize: "14px",
+                  color: "#555",
+                  margin: "0 0 10px",
+                }}
+              >
+                {item.description}
+              </p> */}
             <p
               style={{
                 fontSize: "16px",

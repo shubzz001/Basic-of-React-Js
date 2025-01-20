@@ -77,7 +77,7 @@ const CUpdate = () => {
           <div className="form-group mb-3">
             <label htmlFor="contact">Contact</label>
             <input
-              type="text"
+              type="number"
               id="contact"
               name="contact"
               className="form-control"
