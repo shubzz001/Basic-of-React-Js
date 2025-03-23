@@ -79,14 +79,14 @@ const App = () => {
 
       {/* //! CRUD */}
       {/* <CRUD /> */}
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<CHome />} />
           <Route path='/create' element={<CCreate />} />
           <Route path='/read' element={<CRead />} />
           <Route path='/update' element={<CUpdate />} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
 
     </>
   )

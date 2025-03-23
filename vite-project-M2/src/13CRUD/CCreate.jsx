@@ -29,6 +29,12 @@ const CCreate = () => {
 
 
   };
+  // const send = (e) => {
+  //   e.preventDefault();
+  //   axios.post("url", values).then((v) => {
+
+  //   })
+  // }
 
   return (
     <div className="p-4 mt-4" style={{ backgroundColor: "#dbdbdb" }}>
